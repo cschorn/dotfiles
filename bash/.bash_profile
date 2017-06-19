@@ -20,8 +20,8 @@ alias projects='cd ~/Projekte'
 
 CONFIG_DIR="$HOME/.bash/"
 
-if [ -f "$CONFIG_DIR/git-completion.sh" ]; then
-    source "$CONFIG_DIR/git-completion.sh"
+if [ -f "$CONFIG_DIR/git-completion.bash" ]; then
+    source "$CONFIG_DIR/git-completion.bash"
 fi
 
 if [ -f "$CONFIG_DIR/git-prompt.sh" ]; then
