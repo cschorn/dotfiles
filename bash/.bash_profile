@@ -1,4 +1,3 @@
-export PS1="\W\$ "
 shopt -s autocd
 
 #
@@ -36,5 +35,6 @@ SECRETS="$HOME/.bash/secrets.sh"
 if [ -f $SECRETS ]; then
     source $SECRETS
 fi
+export PS1="\W$_(_git_ps1 " (%s)")\$"
 
 eval $(/usr/libexec/path_helper -s)
