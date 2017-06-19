@@ -19,6 +19,16 @@ alias ll='ls -lAG'
 alias la='la -A'
 alias projects='cd ~/Projekte'
 
+CONFIG_DIR="$HOME/.bash/"
+
+if [ -f "$CONFIG_DIR/git-completion.sh" ]; then
+    source "$CONFIG_DIR/git-completion.sh"
+fi
+
+if [ -f "$CONFIG_DIR/git-prompt.sh" ]; then
+    source "$CONFIG_DIR/git-prompt.sh"
+fi
+
 #
 # API Tokens etc.
 #
